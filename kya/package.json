@@ -1,0 +1,11 @@
+{
+  "name": "kya",
+  "version": "1.0.0",
+  "description": "Bot Kya",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Onix",
+  "license": "ISC"
+}
