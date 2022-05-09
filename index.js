@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const Canvas = require("canvas");
-const { prefix, token} = require('./config.json');
+const { prefix, token, server, id_salon_arrivee, id_role, id_salon_depart} = require('./config.json');
 const Client = new Discord.Client({
     intent: [32767]
 });

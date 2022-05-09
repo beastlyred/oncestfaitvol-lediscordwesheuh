@@ -3,5 +3,6 @@
     "token": "",
     "id_role": "",
     "id_salon_arrivee": "",
-    "id_salon_depart": ""
+    "id_salon_depart": "",
+    "server": ""
 }
