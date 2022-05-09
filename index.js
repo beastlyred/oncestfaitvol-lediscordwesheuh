@@ -83,7 +83,6 @@ fs.readdir("./cmds/", (err, files) => {
 })
 
 bot.on("ready", async () => {
-    console.log(`${bot.user.username} is ready!`);
 
     // Every 5 seconds check the "muted.json" file to see when a users mute is up
     bot.setInterval(() => {
