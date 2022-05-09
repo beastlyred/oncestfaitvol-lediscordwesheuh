@@ -10,8 +10,8 @@ const Client = new Discord.Client({
 
 Client.on("guildMemberAdd", async member =>{
     console.log("Un membre est arrivé !")
-    Client.channels.cache.get("940740502708420688").send(`Bienvenue <@` + member.id + `> sur **⭐・Sad #New Project** Profite de ton séjour !! :tada:`);
-    member.roles.add("937179765738197062");
+    Client.channels.cache.get("{id_salon}").send(`Bienvenue <@` + member.id + `> sur ** {server} ** Profite de ton séjour !! :tada:`);
+    member.roles.add("{id_role}");
     console.log("Le role nouveau a été ajouter à un utilisateur");
 
     var canvas = Canvas.createCanvas(1024, 500);
@@ -45,7 +45,7 @@ Client.on("guildMemberAdd", async member =>{
 
 Client.on("guildMemberRemove", member => {
     console.log("Un membre a quitté le serveur !");
-    Client.channels.cache.get("937256290948882512").send(` <@` + member.id + `> est parti de **⭐・Sad #New Project** !!:sob:`);
+    Client.channels.cache.get("{id_salon2}").send(` <@` + member.id + `> est parti de **{server}** !!:sob:`);
 });
 
 
@@ -62,9 +62,9 @@ Client.on("message", msg => {
         const embed = new Discord.MessageEmbed()
             .setColor("#0099ff")
             .setTitle("Liste des commandes du serveur")
-            .setAuthor("Kya", "https://imgur.com/rsMLz5t")
+            .setAuthor("Kya", "https://media.discordapp.net/attachments/935403143330689034/973037653685567548/kya.jpg?width=1191&height=670")
             .setDescription("Vous y trouverez toutes les commandes disponibles à votre rôle")
-            .setThumbnail("https://imgur.com/rsMLz5t")
+            .setThumbnail("https://media.discordapp.net/attachments/935403143330689034/973037653685567548/kya.jpg?width=1191&height=670")
             .addField("__+help__", "- Affiche la liste des commandes en mp")
             .addField("__+ping__", " - Le bot répond 'pong !'")
             .setTimestamp()
