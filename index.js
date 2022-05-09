@@ -3,6 +3,7 @@ const { prefix, token, server, id_salon_arrivee, id_role, id_salon_depart} = req
 const Client = new Discord.Client({
     intent: [32767]
 });
+const commande = require('./commands/mute.js')
 
 
 //Arrivée d'un membre et commande de base
