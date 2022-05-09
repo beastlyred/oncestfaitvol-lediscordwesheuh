@@ -10,8 +10,8 @@ const Client = new Discord.Client({
 
 Client.on("guildMemberAdd", async member =>{
     console.log("Un membre est arrivé !")
-    Client.channels.cache.get("{id_salon}").send(`Bienvenue <@` + member.id + `> sur ** {server} ** Profite de ton séjour !! :tada:`);
-    member.roles.add("{id_role}");
+    Client.channels.cache.get(id_salon_arrivee).send(`Bienvenue <@` + member.id + `> sur ** `+ server +` ** Profite de ton séjour !! :tada:`);
+    member.roles.add(id_role);
     console.log("Le role nouveau a été ajouter à un utilisateur");
 
     var canvas = Canvas.createCanvas(1024, 500);
@@ -45,7 +45,7 @@ Client.on("guildMemberAdd", async member =>{
 
 Client.on("guildMemberRemove", member => {
     console.log("Un membre a quitté le serveur !");
-    Client.channels.cache.get("{id_salon2}").send(` <@` + member.id + `> est parti de **{server}** !!:sob:`);
+    Client.channels.cache.get(id_salon_depart).send(` <@` + member.id + `> est parti de `+ server +` !!:sob:`);
 });
 
 
